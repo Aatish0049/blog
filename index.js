@@ -1,6 +1,8 @@
 const express=require("express");
 const app=express();
 let port=8080;
+let port = process.env.PORT || 8080;
+
 
 const path=require("path");
 const { v4: uuidv4 } = require('uuid');
