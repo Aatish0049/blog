@@ -35,6 +35,9 @@ Film reflections, personal anecdotes, and Bollywood stories.`,
     image: "https://media.licdn.com/dms/image/v2/C5112AQGvuO8Jk2Vl9A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520118597226?e=2147483647&v=beta&t=TSInh7VchTQiXTwFJStJkUR7bQbJ3A7b8amkXnS1pdk"
   }
 ];
+app.get("/", (req, res) => {
+  res.redirect("/posts");
+});
 
 app.get("/posts",(req,res)=>{
     res.render("index.ejs",{posts} );
