@@ -1,0 +1,84 @@
+/* Heading style */
+h1 {
+    color: maroon;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+/* Blog post card */
+.post {
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Username styling */
+.user {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Content styling */
+.content {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #444;
+}
+
+/* Post image */
+.post img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Buttons and links */
+a, button {
+    margin-right: 10px;
+    padding: 6px 12px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Link styles */
+a {
+    background-color: #005f73;
+    color: white;
+}
+
+/* Delete button */
+form button {
+    background-color: crimson;
+    color: white;
+}
+
+/* New vlog link */
+.create-new {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.post-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 15px;
+}

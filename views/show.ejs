@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
+    <title>Post in Details</title>
+</head>
+<body>
+    <h1>Blog Details</h1>
+    <div class="post">
+        <!-- ✅ Image rendered here -->
+        <img src="<%= post.image %>" alt="Post Image" class="post-img">
+
+        <h3 class="user">@<%= post.username %></h3>
+        <h4 class="content"><%= post.content %></h4>
+        <p><strong>Post ID:</strong> <%= post.id %></p>
+    </div>
+
+    <br>
+    <a href="/posts" class="create-new">Back to All Blogs</a>
+</body>
+</html>

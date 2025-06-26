@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blogs</title>
+  <link rel="stylesheet" href="/Style.css"> <!-- make sure this path matches your file -->
+</head>
+<body>
+  <h1>Blogs</h1>
+
+  <% for(post of posts) { %>
+    <div class="post">
+        <img src="<%= post.image %>" alt="Blog image" width="250" height="160">
+        <h3 class="user">@<%= post.username %></h3>
+        <h4 class="content"><%= post.content %></h4>
+        <a href="/posts/<%= post.id %>">See in details</a><br><br>
+        <a href="/posts/<%= post.id %>/edit">Edit</a><br><br>
+        <form method="POST" action="/posts/<%= post.id %>?_method=DELETE">
+            <button>Delete post</button>
+        </form>
+    </div>
+  <% } %>
+
+  <br><br>
+  <a href="/posts/new" class="create-new">Create New Vlog</a>
+</body>
+</html>

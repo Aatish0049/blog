@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create new blog</title>
+</head>
+<body>
+  <h1>Write your Blog</h1>
+  <form method="POST" action="/posts">
+    <input placeholder="Enter username" name="username" /><br><br>
+    
+    <textarea placeholder="Write your post" name="content" rows="6" cols="35"></textarea><br><br>
+
+    <input placeholder="Enter image path (e.g. /images/dhoni.jpg)" name="image" /><br><br>
+    
+    <button>Submit Post</button>
+  </form>
+</body>
+</html>
